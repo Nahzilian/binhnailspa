@@ -9,14 +9,16 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel = "shortcut icon" type = "image/x-icon" href = "./assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 
 <body>
-    <div>
+    <div class="slide-show-bt">
         <div class="top-wrapper">
-            <div class = "top-wrapper-contact"><strong><i class="fas fa-phone-alt"></i> (905) 502-1116</strong></div>
-            <div class = "top-wrapper-contact"><strong><i class="far fa-envelope"></i> <a href = "mailto:binhspanailmississauga@gmail.com">binhspanailmississauga@gmail.com</a></strong></div>
+            <div class="top-wrapper-contact"><strong><i class="fas fa-phone-alt"></i> (905) 502-1116</strong></div>
+            <div class="top-wrapper-contact"><strong><i class="far fa-envelope"></i> <a
+                        href="mailto:binhspanailmississauga@gmail.com">binhspanailmississauga@gmail.com</a></strong>
+            </div>
         </div>
         <div class="topnav" id="navbar">
             <div class="selection" id="selection">
@@ -31,7 +33,57 @@
             </div>
         </div>
     </div>
-    <div id="home" class="slideshow-container">
+
+    <div id="mainslide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mainslide" data-slide-to="0" class="active"></li>
+            <li data-target="#mainslide" data-slide-to="1"></li>
+            <li data-target="#mainslide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bigslide">
+                    <img class="d-block w-100" src="./assets/slides/big/a2.png" alt="First slide">
+                    <div class = "centered big-layout"><strong>BINH'S NAIL & SPA</strong></div>
+                </div>
+                <div class="smallslide">
+                    <img class="d-block w-100" src="./assets/slides/sm/a2.png" alt="First slide">
+                    <div class = "centered small-layout"><strong>BINH'S NAIL & SPA</strong></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bigslide">
+                    <img class="d-block w-100" src="./assets/slides/big/nailslide.png" alt="Second slide">
+                    <div class = "centered big-layout"><strong>NAILS . SPA . MAKEUP . WAXING</strong></div>
+                </div>
+                <div class="smallslide">
+                    <img class="d-block w-100" src="./assets/slides/sm/nailslide.png" alt="Second slide">
+                    <div class = "centered small-layout"><strong>NAILS . SPA . MAKEUP . WAXING</strong></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bigslide">
+                    <img class="d-block w-100" src="./assets/slides/big/nail.png" alt="Third slide">
+                    <div class = "centered big-layout"><strong>MISSISSAUGA</strong></div>
+                </div>
+                <div class="smallslide">
+                    <img class="d-block w-100" src="./assets/slides/sm/test.jpg" alt="Third slide">
+                    <div class = "centered small-layout"><strong>MISSISSAUGA</strong></div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainslide" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainslide" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!-- <div id="home" class="slideshow-container">
         <div class="slides fade">
             <div id="slide-1">
                 <div class="banner-text centered">
@@ -50,11 +102,12 @@
             <div id="slide-3">
                 <div class="banner-text centered">
                     MISSISSAUGA 
-                    <!-- bigger -->
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
     <div id="about" class="container about-us">
         <div class="about-us-title">& ABOUT US &</div>
         <div class="row">
@@ -207,7 +260,6 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -216,9 +268,6 @@
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="./assets/images/tiem3.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./assets/images/aaa.jpg" alt="Third slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -257,7 +306,8 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="col">
-                            <span>binhspanailmississauga@gmail.com</span>
+                            <span><a
+                                    href="mailto:binhspanailmississauga@gmail.com">binhspanailmississauga@gmail.com</a></span>
                         </div>
                     </div>
                     <br>
